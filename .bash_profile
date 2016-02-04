@@ -12,6 +12,8 @@ export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tp
 
 export PATH=/opt/local/bin:/opt/local/sbin:${PATH}
 
+export GOPATH=$HOME/Documents/dev/go
+
 # Aliases
 
 ## Shortcuts
@@ -39,30 +41,15 @@ alias branch_new="git for-each-ref --sort=-committerdate refs/heads/ --format='%
 alias master='git co master'
 alias ghp='git co gh-pages'
 
-## SVN
-alias up='svn up'
-alias sst='svn st'
-
 ## Switch repos
-DIR=~/work
+DIR=~/Documents/dev
 alias h='cd ~/'
 alias w='cd ${DIR}'
-alias bs='cd ${DIR}/bootstrap'
-
-## Core GitHub apps
-alias gh='cd ~/github'
-alias gg='cd ~/github/github'
-alias ggg='gg && script/server'
-alias giants='cd ~/github/giants'
-alias hire='cd ~/github/hire'
-alias summit='cd ~/github/summit'
-alias primer='cd ~/github/primer'
 
 ## Server guick starts
 alias ss='script/server'
 alias js='jekyll serve --watch'
 alias ps='python -m SimpleHTTPServer 4000'
-alias gtest='testrb test/integration/bundle_test.rb'
 
 ## Mobile iOS testing
 alias ios='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
