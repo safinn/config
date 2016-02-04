@@ -40,6 +40,7 @@ alias branch_new="git for-each-ref --sort=-committerdate refs/heads/ --format='%
 ## Git branch switching
 alias master='git co master'
 alias ghp='git co gh-pages'
+alias develop='git co develop'
 
 ## Switch repos
 DIR=~/Documents/dev
