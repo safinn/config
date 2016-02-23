@@ -15,7 +15,7 @@
 ### 1. Prep OS X
 
 - Download and install latest version of Xcode from the Mac App Store.
-- Download and install Xcode Command Line Tools from <https://developer.apple.com/downloads/>.
+- Download and install Xcode Command Line Tools from <https://developer.apple.com/downloads/> `xcode-select --install`.
 
 ### 2. Prep Terminal.app
 
@@ -28,16 +28,16 @@
 - [Generate new SSH key](https://help.github.com/articles/generating-ssh-keys/)
 - [Generate an access token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) for Terminal to auth your GitHub account when 2FA is enabled.
 
-### 4. Setup Ruby
+### 4. Additional dependencies
+
+- Install Homebrew: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- Install node via Homebrew: `brew install node`.
+
+### 5. Setup Ruby
 
 - Install rbenv via Homebrew: `brew install rbenv`.
 - Download a version of Ruby via rbenv (e.g., `rbenv install 2.2.3`). See <https://gorails.com/setup/osx/10.11-el-capitan>.
 - Make it the global version of Ruby: `rbenv global 2.2.3`.
-
-### 5. Additional dependencies
-
-- Install Homebrew: `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- Install node via Homebrew: `brew install node`.
 - Install Sass, Jekyll, and Rouge: `gem install sass jekyll rouge`.
 
 ### 6. Setup Atom
