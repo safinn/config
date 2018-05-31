@@ -18,8 +18,8 @@ export GOPATH=$HOME/Documents/dev/go
 
 ## Shortcuts
 alias ll='ls -al'
-alias editgit='atom ~/.gitconfig'
-alias editbash='atom ~/.bash_profile'
+alias editgit='code ~/.gitconfig'
+alias editbash='code ~/.bash_profile'
 alias resource='source ~/.bash_profile && echo "Done!"'
 alias vi=vim
 
@@ -46,17 +46,3 @@ alias develop='git co develop'
 DIR=~/Documents/dev
 alias h='cd ~/'
 alias w='cd ${DIR}'
-
-## Server guick starts
-alias ss='script/server'
-alias js='jekyll serve --watch'
-alias ps='python -m SimpleHTTPServer 4000'
-
-## Mobile iOS testing
-alias ios='open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app'
-
-# Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
